@@ -1,0 +1,195 @@
+/* Shared styles for SignIn and SignUp containers */
+.signin-container, .signup-container {
+    width: 350px;
+    padding: 30px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.85); /* Slight transparency */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    backdrop-filter: blur(8px); /* Frosted glass effect */
+    animation: fadeIn 1.2s ease-in-out; /* Add fade-in animation */
+    position: absolute;
+    top: center;
+    left: 100px;  /* Shift to the left */
+}
+
+  
+  /* Set a background image for the page */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('../assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .signin-container {
+    width: 350px;
+    padding: 30px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.85); /* Slight transparency for frosted effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(8px); /* Frosted glass effect */
+  }
+  
+  
+  
+  /* Fade-in effect for the container */
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+  
+  /* Background panning animation */
+  @keyframes backgroundPan {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: slideUp 1s ease-in-out; /* Slide-up animation for the form */
+  }
+  
+  @keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    box-shadow: 0 2px 12px rgba(0, 128, 255, 0.4);
+    border: 1px solid #007bff;
+    transform: scale(1.03); /* Slight zoom effect */
+  }
+  
+  button {
+    padding: 12px;
+    background: linear-gradient(135deg, #6ec1e4, #007bff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #5aaed9, #0056b3);
+    box-shadow: 0 4px 12px rgba(0, 91, 179, 0.3);
+    transform: translateY(-2px); /* Button hover lift effect */
+  }
+  
+  .error-message {
+    color: #ff4d4f;
+    margin-top: 10px;
+    font-size: 14px;
+    animation: shake 0.5s ease; /* Add shake animation to error */
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+  }
+  
+  .success-message {
+    color: #52c41a;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Extra styling for a futuristic look */
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0056b3;
+    text-shadow: 1px 1px 2px rgba(0, 91, 179, 0.2);
+  }
+  
+  p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Add hover animations to inputs and links */
+  input:hover {
+    background: #f4f9ff;
+  }
+  
+  /* Smooth border effect for container */
+  .signin-container:hover, .signup-container:hover {
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Add floating effect to the containers */
+  .signin-container, .signup-container {
+    animation: floatingEffect 3s ease-in-out infinite;
+  }
+  
+  @keyframes floatingEffect {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+  }
+  

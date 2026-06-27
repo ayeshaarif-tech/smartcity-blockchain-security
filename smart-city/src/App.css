@@ -1,0 +1,141 @@
+/* App.css */
+
+/* General Reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333;
+  }
+  
+  /* App Container */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Navbar Styles */
+  .navbar-container {
+    width: 100%;
+    background-color: #4CAF50; /* Green background */
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  .navbar-container nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar-container nav ul li {
+    display: inline;
+  }
+  
+  .navbar-container nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .navbar-container nav ul li a:hover {
+    background-color: #45a049; /* Darker green on hover */
+    border-radius: 5px;
+  }
+  
+  /* Login Page */
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 100px; /* Ensures it appears in the center */
+  }
+  
+  .login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Protected Route - Dashboard */
+  .dashboard-container {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-container h2 {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Page title for each section */
+  
+  
+  /* Flexbox for Centering Content */
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Add some padding to the app */
+  .app-container {
+    padding-top: 100px; /* Adjust based on navbar height */
+  }
+  

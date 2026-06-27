@@ -1,0 +1,66 @@
+/* Container for the entire Alerts component */
+.alerts-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title of the alerts section */
+  .alerts-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* List styling for alerts */
+  .alerts-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .alert-item {
+    background-color: #ffe6e6;
+    color: #b30000;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: 1px solid #b30000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* No alerts message styling */
+  .no-alerts {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4caf50;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .alerts-container {
+      width: 95%;
+    }
+  
+    .alerts-container h1 {
+      font-size: 2rem;
+    }
+  
+    .alert-item {
+      font-size: 1rem;
+    }
+  
+    .no-alerts {
+      font-size: 1rem;
+    }
+  }
+  

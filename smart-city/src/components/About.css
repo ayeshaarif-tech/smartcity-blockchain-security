@@ -1,0 +1,90 @@
+/* Body Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e7f0fc, #f8f8f8); /* Pastel blue gradient */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    min-height: 100vh;
+  }
+  
+/* About Page Container */
+.about-container {
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    color: #005b96; /* Dark pastel blue */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+h2 {
+    font-size: 1.5 rem;
+    color: #005b96; /* Same color as h1 */
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+/* Overview Paragraph */
+.overview {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #555; /* Neutral dark gray */
+    text-align: left;
+  }
+  
+/* Team and Supervisor Sections */
+.team-section, .supervisor-section {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+/* List Styles */
+.team-list, .supervisor-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+.team-list li, .supervisor-list li {
+    font-size: 1.2rem;
+    color: #4c4c4c;
+    margin: 8px 0;
+    text-align: left;
+  }
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      color: #005b96;
+    }
+  
+    .overview {
+      font-size: 1rem;
+    }
+  
+    .team-list li, .supervisor-list li {
+      font-size: 1rem;
+    }
+  }

@@ -1,0 +1,68 @@
+/* Navbar Container */
+.navbar-container {
+  width: 100%;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Dark gradient */
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1); /* Cyan glow */
+}
+
+/* Navbar Content */
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Title in the Center */
+.navbar-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00ffff; /* Neon cyan */
+  text-align: center;
+  text-shadow: 0 0 8px #00ffff;
+}
+
+/* Buttons on the Right */
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation Buttons */
+.nav-button {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #00ffcc; /* Neon green/cyan */
+  padding: 10px 15px;
+  border-radius: 25px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+.nav-button:hover {
+  background-color: #00bfa5;
+  transform: scale(1.05);
+}
+
+/* Logout Button */
+.logout-button {
+  background-color: #ff4081; /* Neon pink */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px #ff4081;
+}
+
+.logout-button:hover {
+  background-color: #c2185b;
+  transform: scale(1.05);
+}

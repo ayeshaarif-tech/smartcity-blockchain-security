@@ -1,0 +1,109 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Large media
+*.mp4
+*.zip
+*.exe
+*.dll
+# Large media
+*.mp4
+*.zip
+*.exe
+*.dll
+# ML Models (large binaries)
+*.h5
+*.pkl
+*.pt
+*.pth
+*.joblib
+*.onnx
+*.bin
+
+# Blockchain data directories (gigabytes of chain data)
+**/data/geth/
+**/data/keystore/
+**/chaindata/
+**/lightchaindata/
+**/nodes/
+BNode/data/
+Node1/data/
+Node2/data/
+project demo/Demo.mp4
+project demo/project video.mp4
+# IPFS data store
+**/ipfs/blocks/
+**/ipfs/datastore/
+.ipfs/
+
+# Large dataset files
+*.csv
+*.json
+*.parquet
+*.feather
+# Large media
+*.mp4
+*.zip
+*.exe
+*.dll
+
+# ML model binaries (large files - use Git LFS or document separately)
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.*
+
+# Blockchain sensitive files
+Password.txt
+*.key
+keystore/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/settings.json
+.idea/
+*.suo
+*.user
+
+# Encrypted data (runtime generated)
+backend/encrypted_data/*.bin
+backend/encrypted_data/*.enc
+
+# Personal documents
+"group members CVs"/
+*.pdf
+
+# Vite build output
+smart-city/dist/
+smart-city/.vite/
+
+# Logs
+*.log
+logs/
+
+backend/ML/tf-env/

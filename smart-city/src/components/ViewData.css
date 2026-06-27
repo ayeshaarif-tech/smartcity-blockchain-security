@@ -1,0 +1,104 @@
+/* src/components/ViewData.css */
+
+.view-data-container {
+  padding: 2rem;
+  background: linear-gradient(135deg, #0a0a0a, #1e1e2f);
+  min-height: 100vh;
+  border-radius: 12px;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+  animation: fadeInUp 1s ease-out;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+.sensor-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1b1b1b;
+  border: 2px solid #ff00ff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+.sensor-table th,
+.sensor-table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  color: #00ffff;
+}
+
+.sensor-table th {
+  background-color: #0e0e0e;
+  color: #ffff00;
+  font-weight: bold;
+  text-shadow: 0 0 8px #ffff00;
+}
+
+.sensor-table tr:hover {
+  background-color: #2a2a2a;
+  box-shadow: inset 0 0 10px #00ffff;
+}
+
+/* Air Quality Category Colors */
+.aqi-good {
+  color: #00ff00;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.aqi-moderate {
+  color: #ffff00;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ffff00;
+}
+
+.aqi-sensitive {
+  color: #ff9900;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ff9900;
+}
+
+.aqi-unhealthy {
+  color: #ff0000;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+.aqi-very-unhealthy {
+  color: #9900cc;
+  font-weight: bold;
+  text-shadow: 0 0 5px #9900cc;
+}
+
+.aqi-hazardous {
+  color: #7e0023;
+  font-weight: bold;
+  text-shadow: 0 0 5px #7e0023;
+}
+
+/* Animations (same as dashboard theme) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
